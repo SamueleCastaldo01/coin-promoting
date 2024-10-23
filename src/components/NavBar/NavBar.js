@@ -116,13 +116,13 @@ export const NavBar = () => {
 
   return (
     <>
-    <div>
       <div className="navArea">
         <div className="logoImg" onClick={logoImgClicked}>
           <img style={{width: "260px"}} src={logoImg} alt=""></img>
         </div>
-        <div className=''>
-        <div className="btnArea">
+      </div>
+
+      <div className="btnArea">
         <button id="cryptocurrenciesBtn">Cryptocurrencies</button>
         <select
           id="selectTools"
@@ -146,46 +146,9 @@ export const NavBar = () => {
           Level Up
         </button>
       </div>
-        </div>
-        <Grid container>
-          <Grid item xs={12} md={6} lg={4}>
-          
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={6}
-            lg={4}
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <div className="inputDiv">
-              <input type="text" placeholder="Search" className="searchInput" />
-            </div>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={12}
-            lg={4}
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-     
-          </Grid>
-        </Grid>
-      </div>
 
 
-    </div>
+  
 
     <div className="navBtns">
               <div className="navBtnWrappedDiv">

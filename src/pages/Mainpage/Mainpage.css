@@ -49,23 +49,14 @@
 
 .btnArea {
   display: flex;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  gap: 15px;
 }
 
 .btnArea button {
-  padding: 0px 5px 0px 15px ;
-  margin: 5px 10px 15px 10px;
-  height: 40px;
-  width: 250px;
-  min-width: 220px;
+  border: 0px;
   background-color: transparent;
   color: white;
-  /*border-image-source: linear-gradient(to right, #ac42a7, #7ea1af); */
-  border-width: 0px;
-  border-image-slice: 1;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -102,8 +93,6 @@
 .selectTools option:hover {
   background: #f610fe;
 }
-
-
 
 .logoImg img:hover {
   cursor: pointer;
