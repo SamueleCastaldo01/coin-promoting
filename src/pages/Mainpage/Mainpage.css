@@ -8,9 +8,10 @@
 
 .navArea {
   display: flex;
+  padding: 10px 0px;
   align-items: center;
   justify-content: center;
-  background-image: url('../../assets/img/trend/trendBgImg.png');
+  background: linear-gradient(to right, #32C6DC, #847BEA, #CA3AF6, #E125FA);
 }
 
 .navBtnWrappedDiv {
