@@ -151,31 +151,31 @@ export const NavBar = () => {
   
 
     <div className="navBtns">
-              <div className="navBtnWrappedDiv">
-                <Link to="/listcoin">
-                  <button className="navBtn" type="button">
-                    List Coin
-                  </button>
-                </Link>
-              </div>
+      <div className="navBtnWrappedDiv">
+        <Link to="/listcoin">
+          <button className="navBtn" type="button">
+            List Coin
+          </button>
+        </Link>
+      </div>
 
-              <div className="navBtnWrappedDiv">
-                <Link to="/promote">
-                  <button className="navBtn" type="button">
-                    Promote
-                  </button>
-                </Link>
+      <div className="navBtnWrappedDiv">
+        <Link to="/promote">
+          <button className="navBtn" type="button">
+            Promote
+          </button>
+        </Link>
 
-                {/* <button className='navBtn' onClick={() => window.open("https://t.me/onlygemsfinance", "_blank")}>Promote</button>  */}
-              </div>
-              <div className="navBtnWrappedDiv">
-                <button className="navBtn" onClick={() => onConnectWalletHandler()}>
-                  {walletAddress === ''
-                    ? 'Connect Wallet'
-                    : walletAddress.substring(0, 5) + '..' + walletAddress.substring(36, 40)}
-                </button>
-              </div>
-            </div>
+        {/* <button className='navBtn' onClick={() => window.open("https://t.me/onlygemsfinance", "_blank")}>Promote</button>  */}
+      </div>
+      <div className="navBtnWrappedDiv">
+        <button className="navBtn" onClick={() => onConnectWalletHandler()}>
+          {walletAddress === ''
+            ? 'Connect Wallet'
+            : walletAddress.substring(0, 5) + '..' + walletAddress.substring(36, 40)}
+        </button>
+      </div>
+    </div>
 
     </>
   );
