@@ -7,9 +7,10 @@
 }
 
 .navArea {
-  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../../assets/img/trend/trendBgImg.png');
 }
 
 .navBtnWrappedDiv {
@@ -48,26 +49,21 @@
 
 .btnArea {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .btnArea button {
-  padding-left: 15px;
-  padding-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 0px 5px 0px 15px ;
+  margin: 5px 10px 15px 10px;
   height: 40px;
   width: 250px;
   min-width: 220px;
   background-color: transparent;
   color: white;
-  border-image-source: linear-gradient(to right, #ac42a7, #7ea1af);
-  border-width: 1pt;
+  /*border-image-source: linear-gradient(to right, #ac42a7, #7ea1af); */
+  border-width: 0px;
   border-image-slice: 1;
   font-size: 17px;
   font-weight: 600;
@@ -75,6 +71,7 @@
 
 .btnArea button:hover {
   background-image: linear-gradient(to right, #f610fe, #43b5e6);
+  background-color: white;
 }
 
 .selectTools {
@@ -86,9 +83,10 @@
   width: 250px;
   background-color: transparent;
   color: white;
+  /*
   border-image-source: linear-gradient(to right, #ac42a7, #7ea1af);
   border-width: 1pt;
-  border-image-slice: 1;
+  border-image-slice: 1; */
   font-size: 17px;
   font-weight: 600;
 }
@@ -104,6 +102,8 @@
 .selectTools option:hover {
   background: #f610fe;
 }
+
+
 
 .logoImg img:hover {
   cursor: pointer;

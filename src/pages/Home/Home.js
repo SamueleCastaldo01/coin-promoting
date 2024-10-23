@@ -9,7 +9,7 @@ import Mainpage from '../../pages/Mainpage/Mainpage';
 export const Home = () => {
   return (
     <div>
-      <Trendbar />
+     {/** <Trendbar /> */} 
       <Mainpage />
       <Footer />
     </div>

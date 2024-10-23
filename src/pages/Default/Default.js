@@ -16,6 +16,7 @@ import Filter from '../../components/Filter/Filter';
 export const Default = (event) => {
   return (
     <div className="defaultMainDiv">
+      <h1 style={{color: "white"}}>Trendbar</h1>
       <div className="headerImgDiv">
         <img src={advertiseImg} alt=""></img>
       </div>

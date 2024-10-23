@@ -115,13 +115,41 @@ export const NavBar = () => {
   };
 
   return (
+    <>
     <div>
       <div className="navArea">
+        <div className="logoImg" onClick={logoImgClicked}>
+          <img style={{width: "260px"}} src={logoImg} alt=""></img>
+        </div>
+        <div className=''>
+        <div className="btnArea">
+        <button id="cryptocurrenciesBtn">Cryptocurrencies</button>
+        <select
+          id="selectTools"
+          className="selectTools"
+          onChange={toolsChanged}
+          placeholder="Tools"
+          onFocus={() => setTool(true)}
+        >
+          <option style={{ display: tool ? 'none' : 'hidden' }}>Tools</option>
+          {/* <option key="buy_nitrogem" value="/buynitrogem" onClick={toolsChanged}>Buy Nitrogem</option>
+                  <option key="listing_tiers" value="" onClick={toolsChanged}>Others will be soon</option>
+                   */}
+        </select>
+
+        <button style={{borderRadius: "20px"}} id="treasuryBtn" onClick={treasuryBtnClicked}>
+          Buy Back Treasury
+        </button>
+        <button id="lotteryBtn">Lottery</button>
+        <button id="stakingBtn">Staking</button>
+        <button id="levelUpBtn" onClick={levelUpBtnClicked}>
+          Level Up
+        </button>
+      </div>
+        </div>
         <Grid container>
           <Grid item xs={12} md={6} lg={4}>
-            <div className="logoImg" onClick={logoImgClicked}>
-              <img src={logoImg} alt=""></img>
-            </div>
+          
           </Grid>
           <Grid
             item
@@ -151,7 +179,15 @@ export const NavBar = () => {
               alignItems: 'center',
             }}
           >
-            <div className="navBtns">
+     
+          </Grid>
+        </Grid>
+      </div>
+
+
+    </div>
+
+    <div className="navBtns">
               <div className="navBtnWrappedDiv">
                 <Link to="/listcoin">
                   <button className="navBtn" type="button">
@@ -177,35 +213,8 @@ export const NavBar = () => {
                 </button>
               </div>
             </div>
-          </Grid>
-        </Grid>
-      </div>
 
-      <div className="btnArea">
-        <button id="cryptocurrenciesBtn">Cryptocurrencies</button>
-        <select
-          id="selectTools"
-          className="selectTools"
-          onChange={toolsChanged}
-          placeholder="Tools"
-          onFocus={() => setTool(true)}
-        >
-          <option style={{ display: tool ? 'none' : 'hidden' }}>Tools</option>
-          {/* <option key="buy_nitrogem" value="/buynitrogem" onClick={toolsChanged}>Buy Nitrogem</option>
-                  <option key="listing_tiers" value="" onClick={toolsChanged}>Others will be soon</option>
-                   */}
-        </select>
-
-        <button id="treasuryBtn" onClick={treasuryBtnClicked}>
-          Buy Back Treasury
-        </button>
-        <button id="lotteryBtn">Lottery</button>
-        <button id="stakingBtn">Staking</button>
-        <button id="levelUpBtn" onClick={levelUpBtnClicked}>
-          Level Up
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 
